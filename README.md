@@ -1,16 +1,20 @@
 Zabbix-NUT-Template
 ===================
 
-Zabbix Template for NUT(Network UPS Tools)
+Zabbix Template for NUT (Network UPS Tools) with automatic UPS discovery
 
-Supported UPS: http://www.networkupstools.org/stable-hcl.html
+Supported UPSes: http://www.networkupstools.org/stable-hcl.html
 
 
-# Value mapping
+# Installation
 
-Value mapping must be done before importing template. It can done in **Administration** / **General** / **Value mapping** (combobox on right side)
+Value mapping must be done before importing the template. 
 
-Then **Create value map**
+1. Import predefined values in **Administration** / **General** / **Value mapping** - **Import** button (zbx_nut_valuemaps.xml)
+2. Import the template in **Configuration** / **Templates** - **Import** button (zbx_nut_template.xml)
+
+
+Predefined value map:
 
 	0  - unknown state
 	1  - On line (mains is present)
@@ -25,5 +29,3 @@ Then **Create value map**
 	10 - UPS is overloaded
 	11 - UPS is trimming incoming voltage (called "buck" in some hardware)
 	12 - UPS is boosting incoming voltage
-
-![Value mapping](https://raw.githubusercontent.com/blondak/Zabbix-NUT-Template/master/Configuration%20of%20value%20mapping.png)
