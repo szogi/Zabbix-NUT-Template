@@ -2,6 +2,7 @@ Zabbix-NUT-Template
 ===================
 
 Zabbix Template for NUT (Network UPS Tools) with automatic UPS discovery
+for Zabbix server version 3.2.x
 
 Supported UPSes: http://www.networkupstools.org/stable-hcl.html
 
